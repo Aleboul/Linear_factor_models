@@ -66,8 +66,3 @@ def est_A(Chi, delta, df):
     A_hat = est_AI(A_hat, pure) # set value to pure indices
     A_hat = est_AJ(A_hat, Chi, delta, pure) # set value to impur indices
     return A_hat, clique_max
-    
-
-# Faire trois algorithmes pour estimer les variables pures, l'une avec la méthode de Bron, l'autre avec le MILP et celle avec la calibration 
-# Prendre la clique maximale qui a le plus faible coefficient extrémale. Faire en sorte que cela soit propre et traduit par une seule option
-# par l'utilisateur.
