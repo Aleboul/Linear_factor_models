@@ -93,7 +93,7 @@ for i in range(niter):
     W = np.array([np.max(np.c_[np.power(rho, 0) * sample_Cau[i, :], np.power(rho, 1) * sample_Cau[i - 1, :],
                                np.power(rho, 2) * sample_Cau[i - 2, :]], axis=1) for i in range(2, n + p)])
     X = np.array([np.matmul(A, W[i, :]) for i in range(n)]) + \
-        np.random.multivariate_normal(mean, cov, size=1)[0]
+        np.random.multivariate_normal(mean, cov, size=n)
 
     # Calculate block maxima
     block_maxima = np.zeros((k, d))
