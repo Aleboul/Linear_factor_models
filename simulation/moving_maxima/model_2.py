@@ -125,7 +125,7 @@ for i in range(niter):
     # Convert A_hat and A to DataFrames and save them as CSV files
     A_hat = pd.DataFrame(A_hat, columns=range(K_hat))
     A = pd.DataFrame(A, columns=range(K))
-    pd.DataFrame.to_csv(A_hat, "results/results_model_2_calib/model_2_" + str(int(d)) + "_" + str(
+    pd.DataFrame.to_csv(A_hat, "results/results_model_2/model_2_" + str(int(d)) + "_" + str(
         int(k)) + "/Ahat_" + str(int(i)) + ".csv")
-    pd.DataFrame.to_csv(A, "results/results_model_2_calib/model_2_" + str(int(d)) + "_" + str(int(k)) + "/A" + str(
+    pd.DataFrame.to_csv(A, "results/results_model_2/model_2_" + str(int(d)) + "_" + str(int(k)) + "/A" + str(
         int(i)) + ".csv")
