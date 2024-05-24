@@ -10,9 +10,6 @@ import damex as dmx
 
 from rpy2 import robjects as ro
 
-# Damex est en difficulté pour trouver le nombre K lorsque celui-ci est grand
-
-
 def runif_in_simplex(n):
     ''' Return uniformly random vector in the n-simplex '''
 
